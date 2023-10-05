@@ -1,8 +1,9 @@
 {
-    "app_id": "application-0-isjzt",
+    "app_id": "ai-app-service-mxlkl",
     "config_version": 20210101,
-    "name": "Application-0",
+    "name": "ai-app-service",
     "location": "US-VA",
     "provider_region": "aws-us-east-1",
-    "deployment_model": "LOCAL"
+    "deployment_model": "LOCAL",
+    "environment": "development"
 }
