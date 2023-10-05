@@ -1,0 +1,10 @@
+{
+    "name": "ai-app-service",
+    "type": "mongodb-atlas",
+    "config": {
+        "clusterName": "echo",
+        "readPreference": "primaryPreferred",
+        "wireProtocolEnabled": false
+    },
+    "version": 1
+}
