@@ -5,6 +5,10 @@ This is a chat-with-your-documents demo, featuring [Atlas Vector Search](https:/
 
 Live demo: https://ai-app-service-mxlkl.mongodbstitch.com (bring your own OpenAI API key)
 
+<img width="686" alt="demo" src="https://github.com/archie-swif/ai-app-service/assets/2158707/3262e9ba-39e1-465e-8882-d777b8b4f8a4">
+
+
+
 Dataset: [sample_mflix.embedded_movies](https://www.mongodb.com/docs/atlas/sample-data/sample-mflix/#sample_mflix.embedded_movies)
 
 ## Resources
