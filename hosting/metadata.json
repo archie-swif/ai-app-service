@@ -1,11 +1,1 @@
-[
-  {
-    "path": "/404.html",
-    "attrs": [
-      {
-        "name": "Content-Type",
-        "value": "text/html"
-      }
-    ]
-  }
-]
+[{"path":"/404.html","attrs":[{"name":"Content-Type","value":"text/html"}]},{"path":"/_next/static/chunks/594a7e55-e3d2053e818ada9b.js","attrs":[{"name":"Content-Type","value":"application/x-javascript"}]},{"path":"/_next/static/chunks/596-7c987313c6ee36ae.js","attrs":[{"name":"Content-Type","value":"application/x-javascript"}]},{"path":"/_next/static/chunks/981-da5f5fa2c22e97ca.js","attrs":[{"name":"Content-Type","value":"application/x-javascript"}]},{"path":"/_next/static/chunks/app/_app-52924524f99094ab.js","attrs":[{"name":"Content-Type","value":"application/x-javascript"}]},{"path":"/_next/static/chunks/app/_error-c92d5c4bb2b49926.js","attrs":[{"name":"Content-Type","value":"application/x-javascript"}]},{"path":"/_next/static/chunks/fd9d1056-5e1fe970e7954560.js","attrs":[{"name":"Content-Type","value":"application/x-javascript"}]},{"path":"/_next/static/chunks/framework-8883d1e9be70c3da.js","attrs":[{"name":"Content-Type","value":"application/x-javascript"}]},{"path":"/_next/static/chunks/main-8246265a2a8fbe92.js","attrs":[{"name":"Content-Type","value":"application/x-javascript"}]},{"path":"/_next/static/chunks/main-app-9ad2a0bd29788824.js","attrs":[{"name":"Content-Type","value":"application/x-javascript"}]},{"path":"/_next/static/chunks/pages/_app-52924524f99094ab.js","attrs":[{"name":"Content-Type","value":"application/x-javascript"}]},{"path":"/_next/static/chunks/pages/_error-c92d5c4bb2b49926.js","attrs":[{"name":"Content-Type","value":"application/x-javascript"}]},{"path":"/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js","attrs":[{"name":"Content-Type","value":"application/x-javascript"}]},{"path":"/_next/static/chunks/webpack-f7f3a12928cb4cae.js","attrs":[{"name":"Content-Type","value":"application/x-javascript"}]},{"path":"/_next/static/css/9c7b37e2a89233d3.css","attrs":[{"name":"Content-Type","value":"text/css"}]},{"path":"/_next/static/media/a2432946bfb2b8f9-s.p.woff","attrs":null},{"path":"/_next/static/vHFkcJUAZfn79AFsvkHw5/_buildManifest.js","attrs":[{"name":"Content-Type","value":"application/x-javascript"}]},{"path":"/_next/static/vHFkcJUAZfn79AFsvkHw5/_ssgManifest.js","attrs":[{"name":"Content-Type","value":"application/x-javascript"}]},{"path":"/index.html","attrs":[{"name":"Content-Type","value":"text/html"}]},{"path":"/index.txt","attrs":[{"name":"Content-Type","value":"text/plain"}]}]
