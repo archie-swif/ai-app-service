@@ -3,8 +3,7 @@
 ## Description
 This is a chat-with-your-documents demonstration, featuring Atlas Vector Search and OpenAI API capabilities.  
 
-Demo: https://ai-app-service-mxlkl.mongodbstitch.com/
-Bring your own OpenAI API key  
+Demo: https://ai-app-service-mxlkl.mongodbstitch.com/ (bring your own OpenAI API key)
 
 ## Resources
 Atlas Vector Search: https://www.mongodb.com/library/vector-search/building-generative-ai-applications-using-mongodb
