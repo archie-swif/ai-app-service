@@ -5,7 +5,7 @@ This is a chat-with-your-documents demo, featuring [Atlas Vector Search](https:/
 
 Live demo: https://ai-app-service-mxlkl.mongodbstitch.com (bring your own OpenAI API key)
 
-Dataset: https://www.mongodb.com/docs/atlas/sample-data/sample-mflix/#sample_mflix.embedded_movies
+Dataset: [sample_mflix.embedded_movies](https://www.mongodb.com/docs/atlas/sample-data/sample-mflix/#sample_mflix.embedded_movies)
 
 ## Resources
 Vector Search tutorials: https://www.mongodb.com/library/vector-search/building-generative-ai-applications-using-mongodb
