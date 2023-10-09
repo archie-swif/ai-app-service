@@ -1,0 +1,59 @@
+body {
+    background-color: #000;
+}
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.centered-div {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .centered-div {
+        width: 40%;
+    }
+}
+
+.command-line {
+    display: flex;
+    align-items: flex-start;
+    background-color: #000;
+    padding: 10px;
+}
+
+.prompt-icon {
+    color: limegreen;
+    margin-right: 5px;
+    font-size: 20pt;
+}
+
+.prompt-image {
+    color: limegreen;
+    margin-right: 5px;
+    font-size: 20pt;
+    width: 100%;
+}
+
+.command-input {
+    background-color: #000;
+    color: limegreen;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: inherit;
+    font-size: 24px;
+    resize: none;
+}
+
+/* Blinking cursor */
+.command-input:focus {
+    caret-color: limegreen;
+}
+
+
+
+
