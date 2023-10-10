@@ -2,7 +2,7 @@ import './css/globals.css'
 import type {Metadata} from 'next'
 import localFont from 'next/font/local'
 
-const vgaFont = localFont({src: './fonts/vga-8x16.woff'})
+const vgaFont = localFont({src: './fonts/ModernDOS8x16.ttf'})
 
 export const metadata: Metadata = {
     title: '☺',
