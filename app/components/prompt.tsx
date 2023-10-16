@@ -1,7 +1,7 @@
 import {useState} from "react";
 import TextareaAutosize from "react-textarea-autosize";
 
-export default function Prompt({name = "Prompt", onResponse}: any) {
+export default function Prompt({name = "Prompt", onResponse = () => {}}: any) {
     const [prompt, setPrompt] = useState("");
     const [placeholder, setPlaceholder] = useState("");
 
