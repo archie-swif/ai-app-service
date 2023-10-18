@@ -35,7 +35,7 @@ export default function Key({saveKey}: any) {
 
     return (
         <div className="command-line">
-            <span className="prompt-icon">☼</span>
+            <span className="prompt-icon">░</span>
             <form onSubmit={onSubmit}>
                 <input
                     size={100}

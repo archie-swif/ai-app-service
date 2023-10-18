@@ -5,9 +5,9 @@ import localFont from 'next/font/local'
 const vgaFont = localFont({src: './fonts/ModernDOS8x16.ttf'})
 
 export const metadata: Metadata = {
-    title: '☺',
-    applicationName: '☺',
-    icons: '☺'
+    title: '░',
+    applicationName: '░',
+    icons: '░'
 }
 
 export default function RootLayout({children}: { children: React.ReactNode }) {
