@@ -1,13 +1,14 @@
 import {FormEvent, useEffect, useState} from "react";
-import baseAiContext from '../config/base-context.json';
 import baseConfig from '../config/base-config.json';
 import TextareaAutosize from 'react-textarea-autosize';
 
 
 export default function GPT({
-                                request,
-                                onResponse,
-                                searchContext = [],
+                                request = "",
+                                onResponse = () => {
+                                },
+                                systemContext = [],
+                                userContext = [],
                                 openai,
                                 model,
                                 name,
@@ -15,11 +16,11 @@ export default function GPT({
                             }: any) {
 
     const [prompt, setPrompt] = useState("");
-    const [placeholder, setPlaceholder] = useState("Hello! I'm a movie database assistant.");
-    const [aiContext, setAiContext] = useState(baseAiContext as any[]);
+    const [placeholder, setPlaceholder] = useState("Hello!");
+    const [aiContext, setAiContext] = useState(systemContext);
 
     useEffect(() => processRequest(request), [request]);
-    useEffect(() => appendToContext(searchContext), [searchContext]);
+    useEffect(() => appendToContext(userContext), [userContext]);
 
 
     async function onSubmit(e: FormEvent) {
@@ -42,7 +43,7 @@ export default function GPT({
     }
 
     function appendToContext(requestString: any) {
-        const newContext = [...aiContext, ...searchContext];
+        const newContext = [...aiContext, ...userContext];
         setAiContext(newContext);
     }
 
@@ -50,7 +51,8 @@ export default function GPT({
     async function callChatAPI(request: string): Promise<string> {
         try {
             const completionRequest = {"role": "user", "content": request};
-            const newContext = [...aiContext, completionRequest]
+            const newContext = [...aiContext, completionRequest];
+            setAiContext(newContext);
             console.log(newContext);
             const completionPromise = openai.chat.completions.create({
                 ...baseConfig,

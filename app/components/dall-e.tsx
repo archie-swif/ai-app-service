@@ -31,7 +31,7 @@ export default function DallE({request, openai, char = "░"}: any) {
     return (
         <div className="command-line">
             <span className="prompt-icon">{char}</span>
-            <img alt={request} className="prompt-image" src={image}/>
+            <img className="prompt-image" src={image}/>
         </div>
     );
 

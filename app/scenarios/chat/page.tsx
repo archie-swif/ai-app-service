@@ -11,11 +11,7 @@ import MongoDB = Realm.Services.MongoDB;
 import baseMovieContext from '@/app/config/base-context.json';
 
 
-export default function Home() {
-    const [gptRequest, setGPTRequest] = useState<string>("");
-    const [searchContext, setSearchContext] = useState<any []>([]);
-
-    const [mongoClient, setMongoClient] = useState<MongoDB>();
+export default function Chat() {
     const [openai, setOpenai] = useState<OpenAI>();
 
     const [loading, setLoading] = useState<boolean>(true);
@@ -29,11 +25,6 @@ export default function Home() {
 
     useEffect(() => {
         const init = async () => {
-            const app = new Realm.App({id: process.env.NEXT_PUBLIC_APP_ID || ""});
-            const user = await app.logIn(Realm.Credentials.anonymous());
-            const client = user.mongoClient(process.env.NEXT_PUBLIC_APP_SERVICE_ID || "");
-            setMongoClient(client);
-
             const openai = new OpenAI({
                 apiKey: keyRef.current || "",
                 dangerouslyAllowBrowser: true,
@@ -45,22 +36,6 @@ export default function Home() {
             init();
         }
     }, [keyUpdated]);
-
-
-    async function onSearchResponse(searchResults: any[]) {
-        console.log(searchResults);
-        const context = searchResults.map(sr => {
-            return {
-                role: "user",
-                content: JSON.stringify(sr)
-            }
-        });
-        setSearchContext(context);
-    }
-
-    async function onAiResponse(msg: string) {
-        console.log(msg);
-    }
 
     return (
 
@@ -79,18 +54,10 @@ export default function Home() {
                 <div hidden={!(keyRef.current)}>
                     <GPT
                         name='GPT'
-                        model='gpt-3.5-turbo-16k'
+                        model='gpt-4'
                         temperature={0.5}
-                        request={gptRequest}
-                        systemContext={baseMovieContext}
-                        userContext={searchContext}
-                        onResponse={onAiResponse}
+                        userContext={[]}
                         openai={openai}
-                    />
-                    <Atlas
-                        mongoClient={mongoClient}
-                        openai={openai}
-                        onResponse={onSearchResponse}
                     />
                 </div>
 
