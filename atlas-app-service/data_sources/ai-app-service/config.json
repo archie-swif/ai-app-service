@@ -2,7 +2,7 @@
     "name": "ai-app-service",
     "type": "mongodb-atlas",
     "config": {
-        "clusterName": "echo",
+        "clusterName": "ai-app-service",
         "readPreference": "primaryPreferred",
         "wireProtocolEnabled": false
     },
